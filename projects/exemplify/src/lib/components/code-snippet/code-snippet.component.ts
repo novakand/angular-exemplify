@@ -146,6 +146,7 @@ export class CodeSnippetComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.$unsubscribe.next();
+    //
     this.$unsubscribe.complete();
   }
 
